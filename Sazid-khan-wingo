@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRADER SAZID</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#080d0b;
+ color:white;
+ font-family:Arial,sans-serif;
+ text-align:center;
+}
+header{
+ background:#101b15;
+ padding:22px;
+ border-bottom:2px solid #00ff77;
+}
+h1{color:#00ff77;margin:0}
+.container{padding:25px 15px}
+.card{
+ background:#111b16;
+ border:1px solid #00ff77;
+ border-radius:15px;
+ padding:22px;
+ margin:15px auto;
+ max-width:400px;
+ box-shadow:0 0 15px #00ff7730;
+}
+button{
+ background:#00ff77;
+ color:#001b0b;
+ border:none;
+ padding:13px 25px;
+ border-radius:8px;
+ font-size:16px;
+ font-weight:bold;
+ cursor:pointer;
+}
+button:hover{background:#00cc60}
+.result{
+ color:#00ff77;
+ font-size:30px;
+ font-weight:bold;
+ margin:20px;
+}
+footer{color:#888;padding:25px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>TRADER SAZID</h1>
+<p>PERSONAL DASHBOARD</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Welcome!</h2>
+<p>Welcome to my personal website.</p>
+</div>
+
+<div class="card">
+<h2>Demo Number Generator</h2>
+<div class="result" id="result">---</div>
+<button onclick="generate()">GENERATE</button>
+<p style="color:#aaa;font-size:12px">
+Random demo only, not a real market prediction.
+</p>
+</div>
+
+<div class="card">
+<h2>About Me</h2>
+<p>Name: SAZID KHAN</p>
+<p>Interest: Technology & Cricket</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 TRADER SAZID | All Rights Reserved
+</footer>
+
+<script>
+function generate(){
+ let number=Math.floor(Math.random()*10);
+ document.getElementById("result").innerText=number;
+}
+</script>
+
+</body>
+</html>
